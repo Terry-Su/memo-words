@@ -5,7 +5,7 @@ import PATH from 'path'
 
 const outputNewWordsFile = PATH.resolve( __dirname, '../output/newWords.txt' )
 
-export const run = () => {
+export default function() {
   // let newWordsMap = {}
   // let newWords = []
   let newWordsStr = ''
@@ -19,5 +19,3 @@ export const run = () => {
   }
   FS.outputFileSync( outputNewWordsFile, newWordsStr, { encoding: 'utf8' }  ) 
 }
-
-run()

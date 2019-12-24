@@ -1,8 +1,8 @@
-import { run } from "../src/index"
+import compareThenGenerateNewWords from "../src/compareThenGenerateNewWords"
 const assert = require( 'assert' )
 
 describe( "Test", () => {
   it( "Unit", () => {
-    run()
+    compareThenGenerateNewWords()
   } )
 } )
